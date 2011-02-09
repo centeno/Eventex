@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>EventeX</title>
+    </head>
+    <body>
+        <img />
+        <h1>Parabéns {{ subscription.name }} !</h1>
+        <p>
+            Sua inscrição foi realizada em
+            {{ subscription}}
+        </p>
+    </body>
+</html>
