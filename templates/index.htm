@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+		<meta content="IE=8" http-equiv="X-UA-Compatible">
+		<title>Eventex</title>
+		<link href="{{ MEDIA_URL }}style/style.css" media="all" rel="stylesheet">
+		<link href="{{ MEDIA_URL }}style/countdown.css" media="all" rel="stylesheet">
+		<script src="{{ MEDIA_URL }}script/jquery.min.js"></script>
+		<script src="{{ MEDIA_URL }}script/jquery.textshadow.js"></script>
+		<script src="http://www.google.com/events/io/2011/static/js/base.js"></script>
+		<script>
+			function init() {
+				if (io.el('countdown'))
+					io.el('countdown').setAttribute('height',(window.innerHeight-370) + 'px');
+			}
+			$(document).ready(function(){
+				try {
+					$("p").textShadow();
+					$("p a").textShadow();
+				} catch(ex){}
+			});
+		</script>
+	</head>
+<body id="index">
+	<div id="wrap" style="background-color:#EEEEEE">
+		<div id="topo">
+			<center><img src="{{ MEDIA_URL }}image/logo.png" id="logo" /></center>
+		</div>
+		<div id="conteudo">
+			<p style="text-align:center">
+			O evento mais esperado e mais sensacional, depois do Dev In Rio, está chegando...<br /><br />
+			Para dúvidas e mais infomações entre em contato <a href="#">eventex@eventex.com.br</a>
+			</p>
+			<div id="container">
+				<div id="canvas-content">
+					<div id="countdown"></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="rodape">
+		<p style="text-align:center; font-size: 12px">Todos os direitos reservados.<br />
+		<a href="http://diegocenteno.com" target="_blank" style="font-size: 12px">Centeno</a></p>
+	</div>
+
+	<script src="http://www.google.com/events/io/2011/static/js/box2d.js"></script>
+	<script src="{{ MEDIA_URL }}script/countdown.js"></script>
+</body>
+</html>

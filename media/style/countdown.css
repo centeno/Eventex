@@ -1,0 +1,614 @@
+a {
+    color: #205aaf;
+    text-decoration: none;
+}
+a img {
+    border: 0;
+}
+a:hover {
+    color: #343434;
+}
+#wrapper {
+    padding-top: 7px;
+    background: transparent url(../img/colorbar.png) repeat-x top left;
+}
+#container {
+    background: transparent url(../img/header-bg.png) repeat-x top left;
+    position: relative;
+}
+#countdown {
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#countdown img.ball {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+}
+#gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent url(../img/gradient.png) no-repeat 50% -100px;
+    z-index: 1;
+    height: 1236px;
+}
+body.degrade #gradient {
+    display: none;
+}
+#header {
+    height: 225px;
+    position: relative;
+    margin: 0 auto;
+    width: 930px;
+    z-index: 10;
+}
+#header h3, #countdown h3 {
+    font-family: 'Droid Sans', arial;
+    font-weight: normal;
+    color: #898989;
+    position: absolute;
+    padding-top: 15px;
+    bottom: 90px;
+    right: -22px;
+    font-size: 21px;
+    background: transparent url(../img/map-icon.png) no-repeat bottom right;
+    height: 21px;
+    line-height: 21px;
+    margin: 0;
+    width: 515px;
+    z-index: 99;
+}
+#countdown h3 a,
+#header h3 a {
+    color: #898989;
+    padding-right: 45px;
+    position: absolute;
+    z-index: 99;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    z-index: 99;
+}
+#nav li, #countdown li {
+    position: relative;
+    list-style: none;
+    margin: 0 0 0 6px;
+    padding: 0;
+    float: left;
+    background: transparent url(../img/nav-button-left-sprite.png) no-repeat top left;
+}
+#nav li a, #countdown li a {
+    display: block;
+    background-image: url(../img/nav-button-sprite.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 31px;
+    margin-left: 10px;
+    line-height: 31px;
+    font-family: 'Droid Sans', Arial;
+    font-size: 16px;
+    padding: 0 20px 0 10px;
+}
+#nav li:hover, #countdown li:hover {
+    background-position: left -33px;
+}
+#nav li:hover > a, #countdown li:hover > a {
+    background-position: right -33px;
+    color: #205aaf;
+}
+#nav li:active, #countdown li:active,
+#nav li.active, #countdown li.active {
+    background-position: left -66px;
+}
+#countdown li:active > a, #countdown li.active > a,
+#nav li:active > a, #nav li.active > a {
+    background-position: right -66px;
+    color: #FFF;
+}
+
+#canvas-content {
+    margin: 100px auto 0 auto;
+    width: 930px;
+    z-index: 99;
+    position: relative;
+}
+#content {
+    padding: 40px;
+    background: #FFF;
+    width: 850px;
+    margin: 50px auto 100px auto;
+    -moz-box-shadow: 0 0 6px #c6c6c6;
+    -webkit-box-shadow: 0 0 6px #c6c6c6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px 4px 4px 4px;
+    overflow: auto;
+    z-index: 10;
+    position: relative;
+}
+#content dl {
+    margin: 0;
+    padding: 0;
+}
+#content p,
+#content dd {
+    line-height: 1.4em;
+}
+#content h1 {
+    margin: 0 0 40px 0;
+    padding: 0;
+    font-family: 'Droid Sans', Arial;
+    font-weight: normal;
+    color: #363636;
+    font-size: 35px;
+}
+#content h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Droid Sans', Arial;
+    font-weight: normal;
+    color: #363636;
+    font-size: 25px;
+}
+#content h3 {
+    font-family: 'Droid Sans', Arial;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+#content h4 {
+    color: #343434;
+    font-family: 'Droid Sans', Arial;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+#content .subhead {
+    font: 22px 'Droid Sans', Arial;
+    color: #939393;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 40px 0;
+}
+br {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+/* Page Specific Styles */
+
+#index {
+    overflow: hidden;
+}
+#index #logo {
+    cursor: move;
+}
+#index.degrade #logo {
+    cursor: pointer;
+}
+body.hactivated #footer a,
+body.hactivated #header a,
+body.hactivated #nav a {
+    cursor: move;
+}
+
+/* FAQ */
+#faq div.faq-section {
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+}
+#faq div.right {
+    float: right;
+    margin-right: 0;
+}
+#faq dt {
+    font-weight: bold;
+    margin-top: 25px;
+}
+#faq dd {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+/* Sessions */
+#sessions #content {
+    position: relative;
+    padding-bottom: 0;
+}
+#sessions div.session {
+    width: 45%;
+    float: left;
+    clear: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+#sessions div.session h4 {
+    color: #aaa;
+}
+#sessions div.right {
+    float: right;
+    clear: none;
+    margin-right: 0;
+}
+#sessions div.session ul {
+    margin: 0;
+    padding: 0;
+    color: #948988;
+}
+#sessions div.session ul li {
+    list-style: none;
+    padding: 0;
+    line-height: 18px;
+}
+#sessions div.session ul li strong {
+    font-weight: normal;
+}
+#sessions #filter {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-family: 'Droid Sans', Arial;
+    font-size: 15px;
+}
+#sessions #filter #button {
+    display: inline-block;
+    height: 31px;
+    background: transparent url(../img/filter-sprite.png) no-repeat top right;
+    line-height: 31px;
+    padding-right: 50px;
+}
+#sessions #filter #button label {
+    display: inline-block;
+    height: 31px;
+    background: #FFF url(../img/filter-sprite.png) no-repeat 72px top;
+    line-height: 31px;
+    padding-right: 20px;
+    margin-right: 7px;
+    color: #343434;
+    z-index: 3;
+}
+#sessions #filter #button:hover {
+    background-position: right -31px;
+}
+#sessions #filter #button:hover label {
+    background-position: 72px -31px;
+}
+#sessions #filter-table {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px 3px 3px 3px;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    right: 1px;
+    top: 31px;
+    width: 300px;
+}
+#sessions #filter-table:hover {
+    display: block;
+}
+#sessions #filter-table td {
+    vertical-align: top;
+    padding: 3px 10px 3px 3px;
+}
+#sessions #filter a:hover + table {
+    display: block;
+}
+#sessions #legend {
+    clear: both;
+    overflow: auto;
+    margin-left: -28px;
+}
+#sessions #legend h2 {
+    padding-left: 28px;
+}
+#sessions #legend div.legend-item {
+    float: left;
+    width: 30%;
+    margin-left: 28px;
+    min-height: 180px;
+    height: 180px;
+}
+#sessions #legend div.legend-item h3 {
+    font-size: 22px;
+}
+#sessions #legend div.legend-item p {
+    font-family: 'Droid Sans', arial
+    font-size: 15px;
+    color: #999;
+}
+#sessions hr {
+    background: #ECECEC;
+    color: #ECECEC;
+    border: 1px solid #ECECEC;
+    display: block;
+    margin: 20px 0 30px 0;
+    clear: both;
+}
+
+
+/* Travel */
+#travel #content ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+#travel #content ul li {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#travel #content dt {
+    margin-top: 10px;
+}
+#travel #content dd {
+    margin-left: 0;
+    padding-left: 0;
+}
+#travel #content dd.price {
+    font-style: italic;
+}
+#travel #content #travel-map {
+    float: right;
+    margin-left: 20px;
+    width: 400px;
+}
+#travel #content #map {
+    width: 400px;
+    height: 380px;
+}
+#travel #content #travel-details {
+    float: left;
+    width: 430px;
+}
+#travel p.note {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+/* About */
+#about #content {
+    position: relative;
+    padding-bottom: 20px;
+}
+#about #content #register-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+    width: 132px;
+    height: 37px;
+    background: #999;
+    font-family: 'Droid Sans', Arial;
+    line-height: 37px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+}
+#about div.about-item {
+    clear: left;
+}
+#about div.about-item img {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* Register */
+#register h2 {
+    margin: 20px 0;
+}
+#register table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#register table td {
+    padding: 5px 0;
+}
+#register #pricing {
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+#register #questions {
+    width: 45%;
+    float: right;
+    margin-bottom: 20px;
+}
+#register p.note {
+    color: #898989;
+    font-size: 13px;
+    font-style: italic;
+    clear: both;
+    margin: 20px 0 0 0;
+    padding: 0;
+    line-height: 100%;
+}
+#register #content {
+    position: relative;
+}
+#register #content #register-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+    width: 132px;
+    height: 37px;
+    background: #999;
+    font-family: 'Droid Sans', Arial;
+    line-height: 37px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Agenda */
+#agenda #content {
+    overflow: hidden;
+}
+#agenda h2 {
+    margin: 30px 0;
+}
+#agenda div.agenda-header {
+    padding-left: 200px;
+    width: 690px;
+}
+#agenda div.agenda-header span.schedule-hour {
+    width: 40px;
+    display: inline-block;
+    height: 20px;
+}
+#agenda div.agenda-row {
+    position: relative;
+    height: 30px;
+    margin: 0;
+    background: transparent url(../img/agenda-row-bg.png) repeat-x 200px bottom;
+    border-top: 1px solid #FFF;
+    width: 841px;
+}
+#agenda div.alt {
+    background: transparent url(../img/agenda-row-alt-bg.png) repeat-x 200px bottom;
+}
+#agenda div.agenda-row div.agenda-item {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    background: #156abf;
+    color: #FFF;
+    opacity: 0.8;
+}
+#agenda div.agenda-row div.agenda-item:hover {
+    cursor: pointer;
+}
+#agenda div.agenda-row label {
+    line-height: 30px;
+    background: #FFF;
+    width: 190px;
+    display: inline-block;
+    font-family: 'Droid Sans', Arial;
+    padding-left: 10px;
+}
+#agenda div.alt label {
+    background: #EFEFEF;
+}
+#agenda div.agenda-row div.agenda-item span {
+    color: #6da4d9;
+    font-size: 36px;
+    line-height: 30px;
+}
+#agenda div.agenda-row div.agenda-item:hover span {
+    color: #07498b;
+}
+#agenda #info-balloon {
+    background: transparent url(../img/agenda-info-balloon.png) no-repeat top left;
+    position: absolute;
+    width: 182px;
+    height: 79px;
+    padding: 10px;
+    z-index: 99;
+}
+#agenda #info-balloon h4 {
+    font-family: 'Droid Sans', Arial;
+    font-size: 15px;
+    font-weight: normal;
+    color: #5b4f31;
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+#agenda #info-balloon p {
+    font-family: 'Droid Sans', Arial;
+    font-size: 15px;
+    font-style: italic;
+    color: #978149;
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+
+/* Footer */
+#footer {
+    background: transparent url(../img/footer-bg.png);
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 98;
+}
+#footer-content {
+    margin: 0 auto;
+    width: 930px;
+    position: relative;
+}
+#footer ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -4px;
+    line-height: 55px;
+}
+#footer ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+a.share {
+    background-image: url(../img/footer-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 45px;
+    height: 55px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+#share-buzz-link {
+    background-position: 0 0;
+}
+#share-buzz-link:hover {
+    background-position: 0 -55px;
+}
+#share-reddit-link {
+    background-position: -45px 0;
+}
+#share-reddit-link:hover {
+    background-position: -45px -55px;
+}
+#share-twitter-link {
+    background-position: -90px 0;
+}
+#share-twitter-link:hover {
+    background-position: -90px -55px;
+}
+#share-facebook-link {
+    background-position: -135px 0;
+}
+#share-facebook-link:hover {
+    background-position: -135px -55px;
+}
+#footer p {
+    position: absolute;
+    right: 0;
+    line-height: 55px;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,54 @@
+* {
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #343434;
+    font: 13px arial;
+}
+#topo
+{
+	height: 80px;
+	background-color: #F4F4F4;
+	border-bottom: solid 2px #CCCCCC;
+}
+
+#topo #logo{
+	margin-top: 5px;
+}
+
+#rodape
+{
+	position: relative;
+	margin-top: -50px; /* A mesma altura do rodapé, o valor deve ser negativo */
+	height: 50px;
+	clear:both;
+	background-color: #F4F4F4;
+	border-top: solid 2px #CCCCCC;
+}
+
+html, body, #wrap {height: 100%;}
+body > #wrap {
+	height: auto;
+	min-height: 100%;
+}
+#conteudo {
+	padding-bottom: 50px; /* deve ser a mesma altura do rodapé */
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+}  
+
+p, p a {
+	font: 20px Tahoma, Helvetica, Arial, Sans-Serif;
+	line-height: 120%;
+	color: #CCC;
+	text-shadow: 0px 2px 3px #FFF;
+	-moz-text-shadow: 0px 2px 3px #FFF;
+	-webkit-text-shadow: 0px 2px 3px #FFF;
+}
+p a {
+	text-decoration: none;
+	border-bottom: 1px dashed #CCC;
+}
