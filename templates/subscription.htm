@@ -1,0 +1,9 @@
+{% extends 'template.htm' %}
+{% block content %}
+    <p>Formulário de inscrição</p>
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar!" class="button">
+    </form>
+{% endblock content %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+		<meta content="IE=8" http-equiv="X-UA-Compatible">
+		<title>Eventex</title>
+		<link href="{{ MEDIA_URL }}style/style.css" media="all" rel="stylesheet">
+		<script src="{{ MEDIA_URL }}script/jquery.min.js"></script>
+		<script src="{{ MEDIA_URL }}script/jquery.textshadow.js"></script>
+		<script>
+                    $(document).ready(function(){
+			try {
+                            $("p").textShadow();
+                            $("p a").textShadow();
+			} catch(ex){}
+		    });
+		</script>
+	</head>
+<body id="index">
+    <div id="wrap" style="background-color:#EEEEEE">
+        <div id="topo">
+            <img src="{{ MEDIA_URL }}image/logo.png" id="logo" />
+        </div>
+        <div id="conteudo">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
+    <div id="rodape">
+            <p style="text-align:center; font-size: 12px">Todos os direitos reservados.<br />
+            <a href="http://diegocenteno.com" target="_blank" style="font-size: 12px">Centeno</a></p>
+    </div>
+</body>
+</html>
