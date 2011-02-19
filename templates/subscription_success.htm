@@ -1,0 +1,12 @@
+{% extends 'template.htm' %}
+{% block content %}
+	<p>
+		Parabéns {{ subscription.name }}, sua inscrição foi realizada em {{ subscription.created_at|date:"d/m/Y" }}.<br /><br />
+		Em breve, alguém entrará em contato pelo
+		{% if subscription.phone %}
+			telefone {{ subscription.phone }}
+		{% else %}
+			e-mail {{ subscription.email }}
+		{% endif %}
+	</p>
+{% endblock content %}
