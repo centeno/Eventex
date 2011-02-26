@@ -1,0 +1,8 @@
+#Fri Feb 25 23:06:18 BRT 2011
+eclipse.preferences.version=1
+encoding//Helpers/PhoneField.py=ascii
+encoding//subscription/admin.py=cp1252
+encoding//subscription/forms.py=ascii
+encoding//subscription/models.py=cp1252
+encoding//templates/admin/subscription/change_list.html=UTF-8
+encoding/<project>=US-ASCII
